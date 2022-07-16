@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pagina formulario</title>
+  </head>
+  <body>
+    <!-- navegador no puede pillar los metodos post -->
+    <form action="" method="get">
+      <h2></h2>
+      <div>
+        <label for="lnombre">Nombre de usuario</label>
+        <input type="text" id="lnombre" name="nombreUsuario" required/>
+      </div>
+      <br>
+      <div>
+        <label for="lcontra">Contraseña</label>
+        <input type="password" id="lcontra" name="password" required/>
+      </div>
+      <br>
+      <div>
+        <label for="edad">¿Cual es tu edad?</label>
+        <input type="number" name="edad" id="edad" min="0" max="200" step="5" required>
+      </div>
+      <div>
+        <label for="email">¿Cual es tu email?</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div>
+        <label for="fecha">¿Cual es tu fecha de nacimiento?</label>
+        <input type="date" id="fecha">
+      </div>
+      <div>
+        <label for="coment">Cometarios</label>
+        <textarea name="comentario" id="coment" cols="30" rows="10"></textarea>
+      </div>
+      <br>
+      <button type="submit">Enviar</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

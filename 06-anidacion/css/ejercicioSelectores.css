@@ -1,0 +1,16 @@
+.boton span::after{
+content: "Pasa por encima";
+}
+
+.boton:hover{
+    background-color: mediumspringgreen;
+    color: aliceblue;
+}
+
+.boton span:hover::before{
+    content: "¡Hecho!";
+}
+
+.boton span:hover::after{
+   content: "";
+}

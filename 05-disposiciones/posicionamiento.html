@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/posicionamiento.css" />
+  </head>
+  <body>
+    <h1>Posicionamiento CSS</h1>
+    <!-- <ul>
+        <li>static</li>
+        <li>relative</li>
+        <li>fixed</li>
+        <li>absolute</li>
+        <li>sticky</li>
+    </ul> -->
+
+    <div class="static">Soy un div estatico</div>
+    <!-- No podemos usar propiedades -->
+    <div class="sticky">Soy un div sticky</div>
+    <!-- al hacer scroll modifica su posidiconamiento es una mezcla entre 
+    relative y fixed, actua como relative hasta que llegue donde hemos establecido -->
+    <div class="relativ">Soy un div relativo</div>
+    <!-- posicionamos en funcion de la posicion por defecto -->
+
+    <div class="fixed">Soy un div fixed</div>
+    <!-- elimina su espacio por defecto y establecemos sus dimensiones
+    se posiciona en relacion al viewport -->
+    <div class="relative contenedor">
+      <div class="absolute">Soy un div absoluto</div>
+      <!-- se posiciona de forma absoluta en funcion de su elemento padre posicionado mas cercano(relative)
+    si no sera con respecto al contenedor html   -->
+    </div>
+
+
+  </body>
+</html>

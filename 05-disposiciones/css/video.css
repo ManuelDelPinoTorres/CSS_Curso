@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.video{
+    width: 100vw;
+    height: 100vh;
+    /*de esta manera hacemos que rellene toda la pantalla*/
+    object-fit: cover;
+    position: fixed;
+}
+
+.titulo{
+    position: relative;
+    color: aliceblue;
+    text-align: center;
+    top: 50vh;
+}

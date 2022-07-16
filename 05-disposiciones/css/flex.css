@@ -1,0 +1,48 @@
+/* No sobre utilizar flexbox */
+
+/* con overflow tenemos scroll,visible,hiden,auto
+tambien podemos hacer overflox a los ejes que elijamos 
+como puede ser x o y  */
+
+
+.flex{
+    background-color: aqua;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    /* por defecto viene no wrap, wrap mantendra el tamaño
+    y movera los objetos */
+    flex-wrap: wrap;
+    /* establecemos el comportamiento en el eje principal  */
+    justify-content: space-around; 
+    /* establecemos el comportamiento del eje secundario 
+
+    strech hara que ocupe la altura de todo el contenedor,
+    igual que en las demas propiedades,
+    siempre que no tenga asignada ninguna altura asiganda
+
+    flex-start,end y demas
+    */
+    align-items: stretch;
+}
+
+.contenido1{
+    background-color: aliceblue;
+    height: 200px;
+    width: 100px;
+    border: 1px solid blueviolet;
+}
+
+.contenido2{
+    background-color: aliceblue;
+    /* height: 200px; */
+    width: 100px;
+    border: 1px solid blueviolet;
+}
+
+.contenido3{
+    background-color: aliceblue;
+    height: 200px;
+    width: 100px;
+    border: 1px solid blueviolet;
+}

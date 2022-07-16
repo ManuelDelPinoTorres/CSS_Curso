@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+
+div{
+    background-color: darkblue;
+    background-image: url("");
+    background-position: center center;
+    background-position: left bottom;
+    /*comun margin y pading con dos valores*/
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+

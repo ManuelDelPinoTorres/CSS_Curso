@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor{
+    width: 300px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+span.frase{
+    font-style: italic;
+}
+
+/*añadimos delante y detras las los >>*/
+
+span.frase::before{
+    content: '<<';
+
+}
+
+span.frase::after{
+    content: '>>';
+}
+
+.libro{
+    width: 300px;
+    height: 100px;
+    background-color: cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.libro p::first-letter{
+    font-size: xx-large;
+}
+
+.libro p::first-line{
+    color: white;
+}
+
+/* customizamos la seleccion de texto en vez de azul por defecto  */
+.libro p::selection{
+    background-color: chocolate;
+}
+
+/* cambiamos el color de las viñetas */
+.libro li::marker{
+    color:coral;
+}

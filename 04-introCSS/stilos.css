@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    color: cornflowerblue;
+    color: coral;
+    font-size: 40px;
+}
+
+p#p1{
+    color: darkgoldenrod;
+}
+.p2{
+    color: brown;
+}
+
+/* todos elementos con la clase que establezcamos  */
+*.p1{
+    color: aliceblue;
+}

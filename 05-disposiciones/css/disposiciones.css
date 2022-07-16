@@ -1,0 +1,17 @@
+div{
+    background-color: red;
+}
+
+.span1{
+    float: left;
+}
+
+.divC{
+    height: 50px;
+    width: 300px;
+    display: inline-block;
+}
+
+.span2{
+    float: right;
+}
