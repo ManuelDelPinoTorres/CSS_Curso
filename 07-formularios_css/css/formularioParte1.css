@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300;400;700&display=swap');
+
+html{
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.google-btn{
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.buttons{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.google-btn:hover{
+    opacity: 0.6;
+}
+
+.google-btn span{
+    color: aliceblue;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.google-btn picture{
+    background-color: aliceblue;
+    width: 36px;
+    height: 36px;
+    border-radius: 2px;
+    /* dentro de picture alineamos los elementos que tengamos dentro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twitter-btn{
+    color: #ccc;
+    background-color: #eee;
+    border: none;
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.twitter-btn:hover{
+    background-color: #ddd;
+}
+
+.buttons picture img{
+    width: 35px;
+    height: 35px;
+    border-radius: 2px;
+}
+/* de nuevo con flex los separadores se dispondran de forma horizontal */
+.separador{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.separador hr{
+flex-grow: 1;
+border: none;
+border-top: 1px solid #ccc;
+}
+
+.separador span{
+    color: #ccc;
+}
+
+.seccion-inputs{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+ 
+}
+
+label span{
+    font-weight: 700;
+}
+
+label input{
+    width: 100%;
+}
