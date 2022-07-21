@@ -1,0 +1,86 @@
+.padre {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 255, 0.829);
+}
+
+.hijo{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(194, 194, 85);
+    /* si pongo all usara todas */
+    /* sobre el elemeto que va a transicionar */
+    transition: transform 2s cubic-bezier(0.25, 0.1, 0.35, 0.99) 1s;
+
+    /* podemos afectar a la cadencia del movimiento añadiendo al final la forma
+    en que queremo que se comporte */
+
+    /* desde el inspector podemos obtener el cubic beizer para transicionar como queremos
+    y lo añadimos al finla normal */
+
+    /*podemos añadir tambien un delay al final que nos hara que la transformacion
+    empiece mas tarde*/
+}
+
+
+/* cuando haga hover sobre el padre cambiamos la posicion del hijo */
+
+.padre:hover .hijo{
+    transform: translateX(100%);
+       /*le ponemos nombre a la animacion,duracion,repeticion,forma de moverse,final al 100% */
+       /*forwards para mantener el estado del 100%*/
+       /* podemos introducir un numero para decir el numero de veces que se haga
+       
+       numero o de forma infinita(infinite)*/
+
+       /*alternate para que vuelva hacia atras cuando termina la animacion*/
+    animation: traslacion 3s ease-in infinite forwards alternate;
+    
+    /*podemos hacer que la animacion cambie su estado al hacer hover u otra cosa
+    en este caso pararia al hacer hover*/
+    animation-play-state: paused;
+}
+
+/*decimos que los keyframes de translacion seran los siguientes*/
+
+@keyframes traslacion{
+    0%{
+        background-color:crimson;
+        transform: translateX(0%) translateY(0%);
+
+    }
+
+    25%{
+        background-color:chartreuse;
+        transform: translateX(100%) translateY(0%);
+
+    }
+
+    50%{
+        background-color:crimson;
+        transform: translateX(100%) translateY(100%);
+
+    }
+
+    75%{
+        background-color:crimson;
+        transform: translateX(0%) translateY(100%);
+    }
+
+    100%{
+        background-color:crimson;
+        transform: translateX(0%) translateY(0%);
+    }
+
+    /* 50%{
+        background-color: coral;
+        transform: translateX(10%) translateY(50%);
+    } */
+
+    /*pasaremos estados intermedios hasta aqua*/
+
+    /* 100%{
+        background-color: aqua;
+        transform: translateX(100%);
+    } */
+}

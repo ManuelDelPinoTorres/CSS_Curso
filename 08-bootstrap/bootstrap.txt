@@ -1,0 +1,39 @@
+Bootstrap es una libreria/frame work que nos ayuda con los estilos y nos probee elementos componentes y demas
+
+Podriamos crear una pagina sin necesida de tocar los estilos 
+
+Es opensource
+
+https://getbootstrap.com/
+
+Añadimos los liks y scripst 
+
+hay dos tipos de scripst 
+
+bundle que incluye todo y separate que nos permite usar dos partes
+
+-------------------------------------------------------------------------------------------------------------------
+
+Lo mas interesante es el sistema de grid, o rejilla
+
+->puntos de ruptura(a partir de ciertas dimensiones) a partir de los cuales el layout se comporta distinto
+
+->tenemos distintos containers en funcion de los breakpoints que usemos, los usaremos con la clase que nos 
+define en la web y se vera el elementoo que tenga esta clase con las dimensiones que establecemos.
+
+Estas dimensiones iran variando conforme vayamos modificando las dimensiones de la pagina (va pasando de xsmall,small y demas)
+
+->rejilla (divide todo el layout en 12 columnas) cada fila tendra las columnas que establezcamos
+poniendo delante de la clase un numero podemos establece que tamaño debe ocupar en el layout, y podremos
+añadir varias clases para que actuen de varias formas
+
+------------------------------------------------------------------------------------------------------------------
+
+Si nos vamos a componentes podremos empezar a importarlos y añadirlos dentro de nuestro codigo, como es el caso de los
+botones
+
+Dentro de la seccion componentes usaremos los links que queramos
+
+<button type="button" class="btn btn-primary col-3">Primary</button>
+
+Le aplicamos la clase colum y ocupara en una grilla lo que le digamos
