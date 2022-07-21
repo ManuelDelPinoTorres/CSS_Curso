@@ -9,7 +9,10 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
+    width: 450px;
+    /* ponemos automaticamente los margenes de manera centrada */
+    margin: auto;
 }
 
 .google-btn{
@@ -92,11 +95,17 @@ border-top: 1px solid #ccc;
     width: 100%;
 }
 
-label{
-    width: 100%;
+form{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    align-items: stretch;
+    gap: 20px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
  
 }
 
@@ -104,6 +113,66 @@ label span{
     font-weight: 700;
 }
 
-label input{
-    width: 100%;
+.seccion-inputs label input{
+    width: 80%;
+    background-color: #f3f3f4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14;
 }
+
+
+label input{
+    width: 90%;
+    background-color: #f3f3f4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14;
+    transition: background-color 0.5s,border 0.2s,box-shadow 0.5s ;
+}
+
+label input:hover{
+    background-color: white;
+    border: solid 2px #f3f3f4;
+    box-shadow: 0 0 4px rgba(165, 42, 142, 0.695);
+}
+
+label input:focus{
+    background-color: white;
+    border: solid 2px #f3f3f4;
+    box-shadow: 0 0 4px rgba(165, 42, 142, 0.695);
+}
+
+.checkbox-label{
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-label input[type="checkbox"]{
+    width: 20px;
+}
+
+.checkbox-label span{
+    font-weight: 400;
+}
+
+.submit-btn{
+    background-color: fuchsia;
+    color: white;
+    font-weight: 500;
+    font-size: 14;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    opacity: 0.75;
+}
+
