@@ -1,0 +1,29 @@
+.escenario{
+    border: 1px solid gray;
+    padding: 3px;
+}
+
+.em{
+    font-size: 2em;
+}
+
+.rem{
+    font-size: 2rem;
+}
+
+
+/*em hace referencia al tamaño de fuente del contenedor en este caso escenario
+    se usa cuando se quiere hacer referencia al tamaño del padre.
+
+rem hace referencia al tamaño de raiz del dispositivo 
+    fuente definida dentro de nuestro dispositivo.
+
+*/
+
+.escenario-1{
+    font-size: 32px;
+}
+
+.escenario-2{
+    font-size: 16px;
+}

@@ -1,0 +1,83 @@
+h1 {
+    color: red;
+    font-size: 4rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+/* los estilos que pongo aqui afectaran solo
+para los dispositivos que especifique
+
+tenemos la opcion de acceder a tres dispositivos:
+
+    all: para todos los dispositivos
+
+            (el que se suele usar)
+    screen: la pantalla se comportara con el estilo que establezca
+
+    print: cuando se esta imprimiendo se comportara con el estilo que diga
+
+    speech:
+
+Solemos poner condiciones a continuacion con el max(menor a lo que establezca)
+ y min(mayor a lo que establezca) (heigth y width)
+
+ heigth no se suele usar mucho
+
+*/
+
+/*si es el width es menor a lo establecido(excluyente)*/
+@media screen and (max-width: 576px) {
+    h1 {
+        color: blue;
+    }
+}
+
+/* se suele usar con el media all pero no es necesario ponerlo 
+cuando pongamos la condicion max o min directamente */
+
+
+/*movile first*/
+@media (max-width: 995px) {
+    h1 {
+        color: coral;
+    }
+}
+
+
+@media (min-width: 395px) {
+    h1 {
+        color: cadetblue;
+    }
+}
+
+@media (min-width: 695px) {
+    h1 {
+        color: darkgreen;
+    }
+}
+
+/* podemos hacer que actue distinto en funcion de la orientacion 
+
+landscape es la orientacion(altura menor que la altura)
+
+*/
+
+
+@media (orientation:landscape) and( min-height: 300px){
+    p{
+        color: fuchsia;
+    }
+
+}
+
+/* podemos concatenar es decir un or  */
+
+@media (min-height: 300px),( min-height: 1100px){
+    p{
+        color: salmon;
+    }
+
+}
