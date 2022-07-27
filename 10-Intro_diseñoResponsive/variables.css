@@ -1,0 +1,23 @@
+:root{
+    /* definimos variable 
+    
+    nos va a permitir cambiar todos los elementos que tengan esta variable
+    modificando solo el interior de esta
+    */
+    --color-Principal:rgba(245, 107, 27, 0.781);
+    --ancho-principal:350px;
+}
+
+.titulo{
+    color: var(--color-Principal);
+}
+
+.footer{
+    color: var(--color-Principal);
+}
+
+.contenedor{
+    background-color: antiquewhite;
+    padding: 1rem;
+    max-width: var(--ancho-principal);
+}

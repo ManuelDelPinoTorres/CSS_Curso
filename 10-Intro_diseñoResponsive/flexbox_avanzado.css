@@ -1,0 +1,43 @@
+/* flex box es totalmente responsive */
+
+.contenedor{
+    background-color: yellow;
+    padding: 0.25rem;
+    display: flex;
+    gap: 0.5rem;
+    min-height: 5rem;
+    /* flex-direction: column; */
+
+    /* eje principal */
+    justify-content: center;
+    
+    /* end y start no spermitiran colocar al principio y al 
+    final */
+    align-items: center;
+
+    flex-wrap: wrap;
+    /* hace que se quede 
+    el tamaño de los elementos pasandolos 
+    a la siguiente linea  
+    
+    
+    Con wrap podremos alinear las lineas con aling content
+    
+    
+    */
+}
+
+.item{
+    background-color: salmon;
+    /* 0.25 veces el tamaño de la raiz */
+    padding: 0.25rem;
+    width: 10rem;
+}
+
+/* podemos modificar el comportamiento de cada uno de los 
+elementos */
+
+.item2{
+    justify-self: end;
+    align-self: start;
+}

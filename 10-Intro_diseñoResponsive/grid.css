@@ -1,0 +1,56 @@
+.contenedor {
+  display: grid;
+  /* tres columnas de tamaño automatico */
+
+  /* grid-template-columns: auto auto auto;
+    
+    podemos asignar el tamaño que queramos asignar a cada columna
+       grid-template-columns: 20px 3rem 25vw; 
+       grid-template-columns: repeat(3, auto);
+    */
+
+  /* Podemos asignar el espacio de manera fraccionada */
+  grid-template-columns: 1fr 1fr 4fr;
+
+  /* podemos asignar tambien valores a las filas */
+  grid-template-rows: 200px 2fr 1fr;
+
+  /* asignamos areas en funcion de un nombre que asignemos */
+  /* grid-template-areas: 'head head head' 'main main aside' 'footer footer footer'; */
+
+  gap: 0.5rem;
+  /* espacios de columnas y filas */
+  column-gap: 0.1rem;
+  row-gap: 1rem;
+}
+
+.item {
+  background-color: aquamarine;
+  padding: 0.25rem;
+  font-size: 2rem;
+  border: 1px solid black;
+}
+
+/* .item1{
+    grid-area: head;
+}
+
+.item9{
+    grid-area: footer;
+} */
+
+
+.item1 {
+  /* podemos decirle desde que columna a cual va a ocupar */
+  grid-column: 2 / 3;
+
+  /* si agregamos span le decimos cuantas columnas queremos que 
+    ocupe */
+  grid-column: 2 / span 2;
+}
+
+.item9 {
+    /* desde que finla y coluimna empieca */
+  grid-area: 1 / 2 / 3 / 5;
+}
+
