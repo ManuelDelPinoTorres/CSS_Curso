@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    background-color: darkolivegreen;
+}
+
+.container .row div{
+    border: 1px solid black;
+}
+
+.col {
+    background-color: aquamarine;
+}
+
+.col-sm {
+    background-color: blueviolet;
+}
+
+.col-md {
+    background-color: coral;
+}
+
+.col-lg{
+    background-color: crimson;
+}
+
+.col-xl{
+    background-color: burlywood;
+}

@@ -1,0 +1,11 @@
+.col{
+    background-color: aqua;
+}
+
+.col-sm{
+    background-color: brown;
+}
+
+.row div{
+    margin: 0.25rem;
+}

@@ -1,0 +1,41 @@
+body{
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.barraLateral{
+    display: flex;
+    flex-direction: column;
+    background-color: coral;
+    padding: 30px 10px;
+}
+
+.elemento{
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.seccionPrincipal{
+    background-color: bisque;
+}
+
+@media (max-width:640px){
+    body{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .barraLateral{
+        order: 2;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .seccionPrincipal{
+        order: 1;
+    }
+
+}
